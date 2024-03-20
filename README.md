@@ -1,4 +1,4 @@
-# Testing Your Components
+# Test-Driven Development: Testing Your Components
 
 ## Implementing Tests with Jest:
 
