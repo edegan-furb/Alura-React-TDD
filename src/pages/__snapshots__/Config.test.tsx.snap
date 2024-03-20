@@ -27,12 +27,19 @@ exports[`The config page Must be rendered correctly 1`] = `
         
       </form>
       <ul />
-      <footer>
+      <footer
+        class="footer-config"
+      >
         <button
+          class="button"
           disabled=""
         >
           Start game
         </button>
+        <img
+          alt="Sacolas de compras"
+          src="/images/sacolas.png"
+        />
       </footer>
     </section>
   </div>

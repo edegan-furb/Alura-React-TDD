@@ -10,13 +10,20 @@ jest.mock("../state/hooks/useParticipantList", () => {
   };
 });
 
-const mockNavigation = jest.fn()
+const mockNavigation = jest.fn();
+const mockDraw = jest.fn();
 
-jest.mock('react-router-dom', () => {
-    return {
-        useNavigate: () => mockNavigation
-    }
-})
+jest.mock("../state/hooks/useDrawer", () => {
+  return {
+    useDrawer: () => mockDraw,
+  };
+});
+
+jest.mock("react-router-dom", () => {
+  return {
+    useNavigate: () => mockNavigation,
+  };
+});
 
 describe("where there are not enough participants", () => {
   beforeEach(() => {
@@ -59,7 +66,8 @@ describe("where there are enough participants", () => {
     const button = screen.getByRole("button");
     fireEvent.click(button);
 
-    expect(mockNavigation).toHaveBeenCalledTimes(1)
-    expect(mockNavigation).toHaveBeenCalledWith('/draw')
+    expect(mockNavigation).toHaveBeenCalledTimes(1);
+    expect(mockNavigation).toHaveBeenCalledWith("/draw");
+    expect(mockDraw).toHaveBeenCalledTimes(1);
   });
 });
