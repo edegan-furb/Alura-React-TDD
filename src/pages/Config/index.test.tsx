@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { RecoilRoot } from "recoil";
-import Config from "./Config";
+import Config from ".";
 
 const mockNavegation = jest.fn();
 

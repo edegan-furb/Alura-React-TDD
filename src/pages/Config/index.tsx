@@ -1,7 +1,7 @@
-import Card from "../components/Card";
-import Footer from "../components/Footer";
-import Form from "../components/Form";
-import ParticipantsList from "../components/ParticipantList";
+import Card from "../../components/Card";
+import Footer from "../../components/Footer";
+import Form from "../../components/Form";
+import ParticipantsList from "../../components/ParticipantList";
 
 const Config = () => {
   return (

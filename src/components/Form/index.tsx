@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import { useAddParticipant } from "../state/hooks/useAddParticipant";
-import { useErrorMessage } from "../state/hooks/useErrorMessage";
+import { useAddParticipant } from "../../state/hooks/useAddParticipant";
+import { useErrorMessage } from "../../state/hooks/useErrorMessage";
 
-import './Form.css'
+import './styles.css'
 
 const Form = () => {
   const [name, setName] = useState("");

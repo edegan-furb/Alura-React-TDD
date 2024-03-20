@@ -1,17 +1,17 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import React from "react";
 import { RecoilRoot } from "recoil";
-import { useParticipantList } from "../state/hooks/useParticipantList";
-import Draw from "./Draw";
-import { useDrawResult } from "../state/hooks/useDrawResult";
+import { useParticipantList } from "../../state/hooks/useParticipantList";
+import Draw from ".";
+import { useDrawResult } from "../../state/hooks/useDrawResult";
 
-jest.mock("../state/hooks/useParticipantList", () => {
+jest.mock("../../state/hooks/useParticipantList", () => {
   return {
     useParticipantList: jest.fn(),
   };
 });
 
-jest.mock("../state/hooks/useDrawResult", () => {
+jest.mock("../../state/hooks/useDrawResult", () => {
   return {
     useDrawResult: jest.fn(),
   };

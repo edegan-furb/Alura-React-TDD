@@ -1,10 +1,10 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import React from "react";
 import { RecoilRoot } from "recoil";
-import Footer from "./Footer";
-import { useParticipantList } from "../state/hooks/useParticipantList";
+import Footer from ".";
+import { useParticipantList } from "../../state/hooks/useParticipantList";
 
-jest.mock("../state/hooks/useParticipantList", () => {
+jest.mock("../../state/hooks/useParticipantList", () => {
   return {
     useParticipantList: jest.fn(),
   };
@@ -13,7 +13,7 @@ jest.mock("../state/hooks/useParticipantList", () => {
 const mockNavigation = jest.fn();
 const mockDraw = jest.fn();
 
-jest.mock("../state/hooks/useDrawer", () => {
+jest.mock("../../state/hooks/useDrawer", () => {
   return {
     useDrawer: () => mockDraw,
   };

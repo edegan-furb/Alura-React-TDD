@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { useParticipantList } from "../state/hooks/useParticipantList";
-import { useDrawResult } from "../state/hooks/useDrawResult";
-import Card from "../components/Card";
+import { useParticipantList } from "../../state/hooks/useParticipantList";
+import { useDrawResult } from "../../state/hooks/useDrawResult";
+import Card from "../../components/Card";
 
-import "./Draw.css";
+import "./styles.css";
 
 const Draw = () => {
   const participants = useParticipantList();
