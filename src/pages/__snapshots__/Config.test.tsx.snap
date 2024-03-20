@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The config page Must be rendered correctly 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <section>
+      <h2>
+        Lets begin!
+      </h2>
+      <form>
+        <div
+          class="group-input-btn"
+        >
+          <input
+            placeholder="Enter participant names"
+            type="text"
+            value=""
+          />
+          <button
+            disabled=""
+          >
+            Add
+          </button>
+        </div>
+        
+      </form>
+      <ul />
+      <footer>
+        <button
+          disabled=""
+        >
+          Start game
+        </button>
+      </footer>
+    </section>
+  </div>
+</div>
+`;
