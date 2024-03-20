@@ -10,7 +10,6 @@ jest.mock("react-router-dom", () => {
     useNavigate: () => mockNavegation,
   };
 });
-
 describe("The config page", () => {
   test("Must be rendered correctly", () => {
     const { container } = render(
@@ -21,4 +20,5 @@ describe("The config page", () => {
 
     expect(container).toMatchSnapshot();
   });
+
 });
