@@ -36,7 +36,7 @@ describe("In the draw page", () => {
     );
 
     const options = screen.queryAllByRole("option");
-    expect(options).toHaveLength(participants.length);
+    expect(options).toHaveLength(participants.length + 1);
   });
   test("Secret Santa is shown when requested", () => {
     render(
@@ -47,7 +47,7 @@ describe("In the draw page", () => {
     const select = screen.getByPlaceholderText("Select your name");
     fireEvent.change(select, {
       target: {
-        values: participants[0],
+        value: participants[0],
       },
     });
     const button = screen.getByRole("button");
